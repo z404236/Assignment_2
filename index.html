@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <body style="background-color: rgb(199, 202, 204);">
+    <title>
+        Icon Design2.0</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" src="img/1a.png" 
+                onmouseover="this.src='img/1b.png';" 
+                onmouseout="this.src='img/1a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img2" src="img/2a.png" 
+                onmouseover="this.src='img/2b.png';" 
+                onmouseout="this.src='img/2a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img3" src="img/3a.png" 
+                onmouseover="this.src='img/3b.png';" 
+                onmouseout="this.src='img/3a.png';"
+                height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="img/4a.png" 
+                onmouseover="this.src='img/4b.png';" 
+                onmouseout="this.src='img/4a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img5" src="img/5a.png" 
+                onmouseover="this.src='img/5b.png';" 
+                onmouseout="this.src='img/5a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img6" src="img/6a.png" 
+                onmouseover="this.src='img/6b.png';" 
+                onmouseout="this.src='img/6a.png';"
+                height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="img/7a.png" 
+                onmouseover="this.src='img/7b.png';" 
+                onmouseout="this.src='img/7a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img8" src="img/8a.png" 
+                onmouseover="this.src='img/8b.png';" 
+                onmouseout="this.src='img/8a.png';"
+                height="200" width="200"/></div>
+            <div class="image-container"><img id="img9" src="img/9a.png" 
+                onmouseover="this.src='img/9b.png';" 
+                onmouseout="this.src='img/9a.png';"
+                height="200" width="200"/></div>
+        </div>
+
+
+        <script>
+                var sound1 = new Audio("sound/sound1.mp3");
+                var sound2 = new Audio("sound/sound2.mp3");
+                var sound3 = new Audio("sound/sound3.mp3");
+                var sound4 = new Audio("sound/sound4.mp3");
+                var sound5 = new Audio("sound/sound5.mp3");
+                var sound6 = new Audio("sound/sound6.mp3");
+                var sound7 = new Audio("sound/sound7.mp3");
+                var sound8 = new Audio("sound/sound8.mp3");
+                var sound9 = new Audio("sound/sound9.mp3");
+
+                window.onload = function() {
+                    document.getElementById('img1').addEventListener('click', function() {
+                        sound1.play();
+                    });
+                    document.getElementById('img2').addEventListener('click', function() {
+                        sound2.play();
+                    });
+                    document.getElementById('img3').addEventListener('click', function() {
+                        sound3.play();
+                    });
+                    document.getElementById('img4').addEventListener('click', function() {
+                        sound4.play();
+                    });
+                    document.getElementById('img5').addEventListener('click', function() {
+                        sound5.play();
+                    });
+                    document.getElementById('img6').addEventListener('click', function() {
+                        sound6.play();
+                    });
+                    document.getElementById('img7').addEventListener('click', function() {
+                        sound7.play();
+                    });
+                    document.getElementById('img8').addEventListener('click', function() {
+                        sound8.play();
+                    });
+                    document.getElementById('img9').addEventListener('click', function() {
+                        sound9.play();
+                    });
+                    
+             }
+                
+        </script>
+    </body>
+</html>
